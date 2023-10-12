@@ -10,7 +10,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1400px;
+    width: var(--container-width);
     margin: auto;
 }
 ul.nav{
@@ -31,12 +31,15 @@ display: flex;
 .navItem.selected{
     color: var(--Secondary-dark);
 }
+.mobileMenu{
+    display: none;
+}
 section.hero{
     background: var(--Primary-gradient);
 }
 .heroContainer{
     margin: auto;
-    width: 1400px;
+    width: var(--container-width);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,7 +62,7 @@ section.hero{
     margin: 0;
 }
 .projects{
-    width: 1400px;
+    width: var(--container-width);
     margin: auto;
     margin-top: 60px;
 }
@@ -133,4 +136,54 @@ footer{
     font-weight: 400;
     margin-bottom: 0;
     margin-top: 0.75rem;
+}
+@media all and (max-width: 1400px) {
+    .heroImage {
+        width: 20%;
+    }
+    .heroContent {
+        width: 60%;
+    }
+}
+@media all and (max-width: 992px) {
+    .heroImage {
+        width: 20%;
+    }
+    .heroContent {
+        width: 80%;
+    }
+    .projectContainer{
+        flex-wrap: wrap;
+    }
+    .projectCard{
+        width: 48%;
+    }
+}
+@media all and (max-width: 768px) {
+    .heroContainer{
+        flex-direction: column;
+    }
+    .heroTitle{
+        text-align: center;
+    }
+    .heroImage {
+        width: 40%;
+    }
+    .heroContent {
+        width: 100%;
+    }
+    .projectCard{
+        width: 100%;
+    }
+}
+@media all and (max-width: 576px) {
+    .mobileMenu {
+        display: block;
+    }
+    ul.nav{
+        display: none;
+    }
+    .topNav{
+        padding: 20px 0;
+    }
 }
