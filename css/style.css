@@ -35,7 +35,7 @@ display: flex;
     display: none;
 }
 section.hero{
-    background: var(--Primary-gradient);
+    background-image: url(./images/.heroImage) ;
 }
 .heroContainer{
     margin: auto;
@@ -45,8 +45,8 @@ section.hero{
     justify-content: center;
 }
 .heroImage{
-    width: 300px;
-    padding: 40px;
+    width: 100%;
+    padding: none;
 }
 .heroContent{
     width: 647px;
