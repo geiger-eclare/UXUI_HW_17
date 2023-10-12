@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 :root{
-    --Primary:#6100E9;
-    --Primary-light:#995df0;
-    --Primary-extra-light:#EFE4FC;
-    --Primary-dark:#0800D1;
-    --Secondary:#d600e9;
-    --Secondary-dark:#A200DB;
-    --Secondary-light:#E988F1;
-    --Secondary-extra-light:#FAE3FB;
+    --Primary:#647E98;
+    --Primary-light:#7bc5d6;
+    --Primary-extra-light:#CBE5EB;
+    --Primary-dark:#2b3642;
+    --Secondary:#A6BB78;
+    --Secondary-dark:#4F651F;
+    --Secondary-light:#d2ec93;
+    --Secondary-extra-light:#f5ffdf;
     --Danger:#EE008D;
     --Danger-light:#F183BE;
     --Danger-extra-light:#FBE1EF;
@@ -26,12 +26,12 @@
     --Gray-extra-light:#E0E0E0;
     --Gray-dark:#272727;
     --white: #FFFFFF;
-    --Primary-gradient:linear-gradient(180deg, #EFE4FC 0%, rgba(239, 228, 252, 0) 100%);
-    --Primary-gradient-rev:linear-gradient(180deg, rgba(239, 228, 252, 0) 0%, #EFE4FC 100%);
+    --Primary-gradient:linear-gradient(180deg, #CBE5EB 0%, rgba(36, 54, 63, 0) 100%);
+    --Primary-gradient-rev:linear-gradient(180deg, rgba(36, 54, 63, 0) 0%, #CBE5EB 100%);
     --font-size-h1: 6rem;
     --font-size-h2: 3.75rem;
     --font-size-h3: 3rem;
-    --font-size-h4: 2.125rem;
+    --font-size-h4: 2.0rem;
     --font-size-h5: 1.5rem;
     --font-size-h6: 1.25rem;
     --font-size-body-small: 0.875rem;
