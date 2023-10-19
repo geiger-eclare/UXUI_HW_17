@@ -1,3 +1,4 @@
+// <---- hover jquery for buttons on the project cards on the homepage ---->
 $(document).ready(function() {
     // PBS Sim
     $(".btnPrimary1").hover(function() {
@@ -38,6 +39,7 @@ $(document).ready(function() {
         $(".btnPrimary4").removeClass("btnPrimaryHover");
     });
 });
+// <---- hover jquery for buttons on the work cards on the works page ---->
 $(document).ready(function() {
     // PBS Sim
     $(".wrkbtn1").hover(function() {
@@ -78,6 +80,7 @@ $(document).ready(function() {
         $(".wrkbtn4").removeClass("wrkbtnHover");
     });
 });
+//<---- hover jquery for skills buttons on works page ---->
 $(document).ready(function() {
     $(".skillsImage1").hover(
         function() {
@@ -114,6 +117,7 @@ $(document).ready(function() {
         }
     );
 });
+// <---- accordian jquery for skills buttons on the works page ---->
 $(document).ready(function() {
     $(".skillsImage1").click(function() {
         var $accordion = $(this).next(".skillAccordian1");
