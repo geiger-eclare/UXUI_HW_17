@@ -75,21 +75,14 @@ display: flex;
     width: 100%;
     background: var(--Primary-dark);
     border-radius: 0.25rem;
+    position: relative;
 }
-.cardImage1{
-    width: 100%;
-}
-.cardImage2{
-    width: 100%;
-}
-.cardImage3{
-    width: 100%;
-}
-.cardImage4{
+.cardImage{
     width: 100%;
 }
 .cardContent{
-    padding: 16px;
+    padding: 15px;
+    vertical-align: middle;
 }
 .cardTitle{
     font-size: var(--font-size-h4);
@@ -99,7 +92,7 @@ display: flex;
     margin-top: 0;
 }
 .cardText{
-    margin-bottom: 1.0rem;
+    margin-bottom: 60px;
 }
 .btnPrimary1{
     border-radius: 0.25rem;
@@ -112,6 +105,8 @@ display: flex;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
+    position: absolute;
+    bottom: 20px;
 }
 .btnPrimary2{
     border-radius: 0.25rem;
@@ -124,6 +119,8 @@ display: flex;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
+    position: absolute;
+    bottom: 20px;
 }
 .btnPrimary3{
     border-radius: 0.25rem;
@@ -136,6 +133,8 @@ display: flex;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
+    position: absolute;
+    bottom: 20px;
 }
 .btnPrimary4{
     border-radius: 0.25rem;
@@ -148,6 +147,22 @@ display: flex;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
+    position: absolute;
+    bottom: 20px;
+}
+.btnPrimaryHover{
+    border-radius: 0.25rem;
+    background: var(--Secondary-dark);
+    padding: 0.625rem;
+    color: var(--white);
+    font-size: var(--font-size-button);
+    font-weight: 2.0rem;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
 }
 section.skills{
     background-color: black;
@@ -202,11 +217,20 @@ section.works{
 }
 .workImage{
     display: inline-block;
-    width: 500px;
+    width: 550px;
+    vertical-align: middle;
+
 }
 .workContainer{
     display: inline-block;
-    width: 450px;
+    width: 40%;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    vertical-align: top;
+    box-sizing: border-box;
+    position: relative;
 }
 .workTitle{
     font-size: var(--font-size-h4);
@@ -215,11 +239,28 @@ section.works{
 .workContent{
     padding-bottom: 50px;
     padding-left: 20px;
+    margin: auto;
 }
-.workbtn{
+.wrkbtn1{
     border-radius: 0.25rem;
-    background: var(--Secondary);
+    background: var(--Primary);
     padding: 0.625rem;
+    margin-left: 0.625rem;
+    margin-top: 40px;
+    color: var(--white);
+    font-size: var(--font-size-button);
+    font-weight: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: absolute;
+}
+.wrkbtn2{
+    border-radius: 0.25rem;
+    background: var(--Primary);
+    padding: 0.625rem;
+    margin-left: 0.625rem;
+    margin-top: 40px;
     color: var(--white);
     font-size: var(--font-size-button);
     font-weight: normal;
@@ -227,6 +268,48 @@ section.works{
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
+    position: absolute;
+}
+.wrkbtn3{
+    border-radius: 0.25rem;
+    background: var(--Primary);
+    padding: 0.625rem;
+    margin-left: 0.625rem;
+    color: var(--white);
+    font-size: var(--font-size-button);
+    font-weight: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+}
+.wrkbtn4{
+    border-radius: 0.25rem;
+    background: var(--Primary);
+    padding: 0.625rem;
+    margin-left: 0.625rem;
+    color: var(--white);
+    font-size: var(--font-size-button);
+    font-weight: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+}
+.wrkbtnHover{
+    border-radius: 0.25rem;
+    background: var(--Primary-dark);
+    padding: 0.625rem;
+    color: var(--white);
+    font-size: var(--font-size-button);
+    font-weight: 2.0rem;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
 }
 footer{
     background-color: #000000;
@@ -235,6 +318,7 @@ footer{
 .footerContainer{
     width: var(--container-width);
     margin: auto;
+    padding-top: 20px;
     text-align: center;
 }
 .footerTitle{

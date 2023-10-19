@@ -1,10 +1,80 @@
 $(document).ready(function() {
-    // Select all buttons with class "btnPrimary1"
+    // PBS Sim
     $(".btnPrimary1").hover(function() {
-        // When hovered over, apply CSS transformation to grow card images
-        $(".cardImage1").css("transform", "scale(1.2)");
+        // Hover on
+        $(".btnPrimary1").addClass("btnPrimaryHover");
     }, function() {
-        // When the hover event ends, remove the transformation
-        $(".cardImage1").css("transform", "scale(1)");
+        // Hover off
+        $(".btnPrimary1").removeClass("btnPrimaryHover");
+    });
+});
+$(document).ready(function() {
+    // DBS Tampa
+    $(".btnPrimary2").hover(function() {
+        // Hover on
+        $(".btnPrimary2").addClass("btnPrimaryHover");
+    }, function() {
+        // Hover off
+        $(".btnPrimary2").removeClass("btnPrimaryHover");
+    });
+});
+$(document).ready(function() {
+    // Giftspo
+    $(".btnPrimary3").hover(function() {
+        // Hover on
+        $(".btnPrimary3").addClass("btnPrimaryHover");
+    }, function() {
+        // Hover off
+        $(".btnPrimary3").removeClass("btnPrimaryHover");
+    });
+});
+$(document).ready(function() {
+    // Breezy
+    $(".btnPrimary4").hover(function() {
+        // Hover on
+        $(".btnPrimary4").addClass("btnPrimaryHover");
+    }, function() {
+        // Hover off
+        $(".btnPrimary4").removeClass("btnPrimaryHover");
+    });
+});
+$(document).ready(function() {
+    // PBS Sim
+    $(".wrkbtn1").hover(function() {
+        // Hover on
+        $(".wrkbtn1").addClass("wrkbtnHover");
+    }, function() {
+        // Hover off
+        $(".wrkbtn1").removeClass("wrkbtnHover");
+    });
+});
+$(document).ready(function() {
+    // DBS Tampa
+    $(".wrkbtn2").hover(function() {
+        // Hover on
+        $(".wrkbtn2").addClass("wrkbtnHover");
+    }, function() {
+        // Hover off
+        $(".wrkbtn2").removeClass("wrkbtnHover");
+    });
+});
+$(document).ready(function() {
+    //  Giftspo
+    $(".wrkbtn3").hover(function() {
+        // Hover on
+        $(".wrkbtn3").addClass("wrkbtnHover");
+    }, function() {
+        // Hover off
+        $(".wrkbtn3").removeClass("wrkbtnHover");
+    });
+});
+$(document).ready(function() {
+    // Breezy
+    $(".wrkbtn4").hover(function() {
+        // Hover on
+        $(".wrkbtn4").addClass("wrkbtnHover");
+    }, function() {
+        // Hover off
+        $(".wrkbtn4").removeClass("wrkbtnHover");
     });
 });
