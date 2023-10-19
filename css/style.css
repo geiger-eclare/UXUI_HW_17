@@ -184,10 +184,7 @@ section.works{
     display: inline-block;
 }
 footer{
-    background-image: url("./images/footerbackground.png");
     background-color: #000000;
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
 }
 .footerContainer{
