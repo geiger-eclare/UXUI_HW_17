@@ -76,7 +76,16 @@ display: flex;
     background: var(--Primary-dark);
     border-radius: 0.25rem;
 }
-.cardImage{
+.cardImage1{
+    width: 100%;
+}
+.cardImage2{
+    width: 100%;
+}
+.cardImage3{
+    width: 100%;
+}
+.cardImage4{
     width: 100%;
 }
 .cardContent{
@@ -92,7 +101,43 @@ display: flex;
 .cardText{
     margin-bottom: 1.0rem;
 }
-.btnPrimary{
+.btnPrimary1{
+    border-radius: 0.25rem;
+    background: var(--Secondary);
+    padding: 0.625rem;
+    color: var(--white);
+    font-size: var(--font-size-button);
+    font-weight: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+}
+.btnPrimary2{
+    border-radius: 0.25rem;
+    background: var(--Secondary);
+    padding: 0.625rem;
+    color: var(--white);
+    font-size: var(--font-size-button);
+    font-weight: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+}
+.btnPrimary3{
+    border-radius: 0.25rem;
+    background: var(--Secondary);
+    padding: 0.625rem;
+    color: var(--white);
+    font-size: var(--font-size-button);
+    font-weight: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+}
+.btnPrimary4{
     border-radius: 0.25rem;
     background: var(--Secondary);
     padding: 0.625rem;
