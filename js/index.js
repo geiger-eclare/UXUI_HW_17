@@ -78,3 +78,78 @@ $(document).ready(function() {
         $(".wrkbtn4").removeClass("wrkbtnHover");
     });
 });
+$(document).ready(function() {
+    $(".skillsImage1").hover(
+        function() {
+            // hover on enlarge
+            $(this).css("transform", "scale(1.3)");
+        },
+        function() {
+            // hover off normal
+            $(this).css("transform", "scale(1)");
+        }
+    );
+});
+$(document).ready(function() {
+    $(".skillsImage2").hover(
+        function() {
+            // hover on enlarge
+            $(this).css("transform", "scale(1.3)");
+        },
+        function() {
+            // hover off normal
+            $(this).css("transform", "scale(1)");
+        }
+    );
+});
+$(document).ready(function() {
+    $(".skillsImage3").hover(
+        function() {
+            // hover on enlarge
+            $(this).css("transform", "scale(1.3)");
+        },
+        function() {
+            // hover off normal
+            $(this).css("transform", "scale(1)");
+        }
+    );
+});
+$(document).ready(function() {
+    $(".skillsImage1").click(function() {
+        var $accordion = $(this).next(".skillAccordian1");
+
+        if ($accordion.is(":hidden")) {
+            // accordion is hidden so it will slide it down
+            $accordion.slideDown();
+        } else {
+            // accordion is visible so it will hide
+            $accordion.slideUp();
+        }
+    });
+});
+$(document).ready(function() {
+    $(".skillsImage2").click(function() {
+        var $accordion = $(this).next(".skillAccordian2");
+
+        if ($accordion.is(":hidden")) {
+            // accordion is hidden so it will slide it down
+            $accordion.slideDown();
+        } else {
+            // accordion is visible so it will hide
+            $accordion.slideUp();
+        }
+    });
+});
+$(document).ready(function() {
+    $(".skillsImage3").click(function() {
+        var $accordion = $(this).next(".skillAccordian3");
+
+        if ($accordion.is(":hidden")) {
+            // accordion is hidden so it will slide it down
+            $accordion.slideDown();
+        } else {
+            // accordion is visible so it will hide
+            $accordion.slideUp();
+        }
+    });
+});

@@ -4,7 +4,12 @@ body{
     color: var(--Primary-extra-light)
 }
 .topNav{
-    background-color: black;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
 }
 .navContainer{
     display: flex;
@@ -22,7 +27,7 @@ display: flex;
     padding: 16px 20px;
     text-decoration: none;
     font-size: var(--font-size-navigation);
-    color: var(--Primary);
+    color: var(--Primary-extra-light);
 }
 .navItem:hover{
     color: var(--white);
@@ -30,6 +35,7 @@ display: flex;
 }
 .navItem.selected{
     color: var(--white);
+    font-weight: 700;
 }
 .mobileMenu{
     display: none;
@@ -38,15 +44,67 @@ display: flex;
     margin: auto;
     width: 100%;
     display: flex;
+    position: relative;
+    height: 100vh;
     justify-content: center;
     object-fit: cover;
 }
-.skillsContainer{
-    margin: auto;
-    width: 100%;
+section.skills{
+    background-image: url('../images/skillsbackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: 40px;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+.skills .sectionTitle{
+    text-align: center;
+}
+.skillsImage1{
+    height: 200px;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+}
+.skillsImage2{
+    height: 200px;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+}
+.skillsImage3{
+    height: 200px;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+}
+.flexContainer{
     display: flex;
-    justify-content: center;
-    object-fit: cover;
+}
+.flexchild1{
+    width: 33%;
+    padding: 20px;
+    text-align: center;
+}
+.flexchild2{
+    width: 33%;
+    padding: 20px;
+    text-align: center;
+}
+.flexchild3{
+    width: 33%;
+    padding: 20px;
+    text-align: center;
+}
+.skillAccordian1{
+    display: none;
+}
+.skillAccordian2{
+    display: none;
+}
+.skillAccordian3{
+    display: none;
 }
 .projects{
     width: 100%;
@@ -164,35 +222,6 @@ display: flex;
     position: absolute;
     bottom: 20px;
 }
-section.skills{
-    background-color: black;
-    padding-right: 40px;
-    padding-left: 20px;
-    padding-top: 40px;
-}
-.skillsTitle{
-    font-size: 3.5rem;
-    color: white;
-}
-.skillImage{
-    height: 200px;
-    padding-left: 20px;
-}
-.flexContainer{
-    display: flex;
-}
-.flexchild1{
-    width: 33%;
-    padding: 20px;
-}
-.flexchild2{
-    width: 33%;
-    padding: 20px;
-}
-.flexchild3{
-    width: 33%;
-    padding: 20px;
-}
 section.works{
     background-color: var(--Primary-dark);
     padding-right: 40px;
@@ -224,13 +253,13 @@ section.works{
 .workContainer{
     display: inline-block;
     width: 40%;
-    padding-right: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 5px;
     vertical-align: top;
     box-sizing: border-box;
     position: relative;
+    text-align: right;
 }
 .workTitle{
     font-size: var(--font-size-h4);
@@ -253,7 +282,7 @@ section.works{
     line-height: normal;
     text-transform: uppercase;
     text-decoration: none;
-    position: absolute;
+    position: relative;
 }
 .wrkbtn2{
     border-radius: 0.25rem;
@@ -268,7 +297,7 @@ section.works{
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
-    position: absolute;
+    position: relative;
 }
 .wrkbtn3{
     border-radius: 0.25rem;
@@ -282,7 +311,7 @@ section.works{
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
-    position: absolute;
+    position: relative;
 }
 .wrkbtn4{
     border-radius: 0.25rem;
@@ -296,7 +325,7 @@ section.works{
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
-    position: absolute;
+    position: relative;
 }
 .wrkbtnHover{
     border-radius: 0.25rem;
@@ -309,7 +338,7 @@ section.works{
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
-    position: absolute;
+    position: relative;
 }
 footer{
     background-color: #000000;
